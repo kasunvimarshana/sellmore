@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PHP Image Resizer</title>
+<style>
+body {
+	font-family:Verdana, Geneva, sans-serif;	
+}
+</style>
+</head>
+<body>
+View original image <a href="resizer/images/sunset.jpg" target="_blank">here</a>
+
+<br /><br /><br />
+Center cropped image, 400 x 400 pixels<br />
+<img src="resizer/resizer.php?file=images/sunset.jpg&width=400&height=400&action=crop&crop_pos=center&quality=100">
+
+<br /><br /><br />
+Bottom cropped image, 500 x 100 pixels<br />
+<img src="resizer/resizer.php?file=images/sunset.jpg&width=500&height=100&action=crop&crop_pos=bottom&quality=100">
+
+<br /><br /><br />
+Resized image, 300 x 200 pixels<br />
+<img src="resizer/resizer.php?file=images/sunset.jpg&width=300&height=200&action=resize&quality=100">
+
+<br /><br /><br />
+Resized image, 700 x 500 pixels, with warermark text<br />
+<img src="resizer/resizer.php?file=images/sunset.jpg&width=700&height=400&action=resize&watermark=PHPJabbers&watermark_pos=cc&color=255,255,255&quality=100">
+
+</body>
+</html>
