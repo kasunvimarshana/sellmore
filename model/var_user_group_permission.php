@@ -6,12 +6,10 @@ class var_user_group_permission extends common_object_class{
         ["key"=>"id", "key_dt"=>DB_CON::PARAM_INT],
         ["key"=>"dev_date", "key_dt"=>DB_CON::PARAM_STR],
         ["key"=>"var_state", "key_dt"=>DB_CON::PARAM_INT],
-        ["key"=>"var_category", "key_dt"=>DB_CON::PARAM_INT],
-        ["key"=>"parent", "key_dt"=>DB_CON::PARAM_BOOL],
-        ["key"=>"code", "key_dt"=>DB_CON::PARAM_STR],
-        ["key"=>"name", "key_dt"=>DB_CON::PARAM_STR],
-        ["key"=>"image", "key_dt"=>DB_CON::PARAM_STR],
-        ["key"=>"display", "key_dt"=>DB_CON::PARAM_BOOL]
+        ["key"=>"var_user_group", "key_dt"=>DB_CON::PARAM_INT],
+        ["key"=>"var_event", "key_dt"=>DB_CON::PARAM_INT],
+        ["key"=>"var_key", "key_dt"=>DB_CON::PARAM_STR],
+        ["key"=>"var_value", "key_dt"=>DB_CON::PARAM_STR]
     );
     private const VAR_TABLE_COLUMN_IGNORE = array(
         ["key"=>"dev_date", "key_dt"=>DB_CON::PARAM_STR]

@@ -7,11 +7,9 @@ class var_category_description extends common_object_class{
         ["key"=>"dev_date", "key_dt"=>DB_CON::PARAM_STR],
         ["key"=>"var_state", "key_dt"=>DB_CON::PARAM_INT],
         ["key"=>"var_category", "key_dt"=>DB_CON::PARAM_INT],
-        ["key"=>"parent", "key_dt"=>DB_CON::PARAM_BOOL],
-        ["key"=>"code", "key_dt"=>DB_CON::PARAM_STR],
+        ["key"=>"var_language", "key_dt"=>DB_CON::PARAM_INT],
         ["key"=>"name", "key_dt"=>DB_CON::PARAM_STR],
-        ["key"=>"image", "key_dt"=>DB_CON::PARAM_STR],
-        ["key"=>"display", "key_dt"=>DB_CON::PARAM_BOOL]
+        ["key"=>"description", "key_dt"=>DB_CON::PARAM_STR]
     );
     private const VAR_TABLE_COLUMN_IGNORE = array(
         ["key"=>"dev_date", "key_dt"=>DB_CON::PARAM_STR]

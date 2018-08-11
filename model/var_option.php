@@ -6,12 +6,8 @@ class var_option extends common_object_class{
         ["key"=>"id", "key_dt"=>DB_CON::PARAM_INT],
         ["key"=>"dev_date", "key_dt"=>DB_CON::PARAM_STR],
         ["key"=>"var_state", "key_dt"=>DB_CON::PARAM_INT],
-        ["key"=>"var_category", "key_dt"=>DB_CON::PARAM_INT],
-        ["key"=>"parent", "key_dt"=>DB_CON::PARAM_BOOL],
-        ["key"=>"code", "key_dt"=>DB_CON::PARAM_STR],
         ["key"=>"name", "key_dt"=>DB_CON::PARAM_STR],
-        ["key"=>"image", "key_dt"=>DB_CON::PARAM_STR],
-        ["key"=>"display", "key_dt"=>DB_CON::PARAM_BOOL]
+        ["key"=>"value", "key_dt"=>DB_CON::PARAM_STR]
     );
     private const VAR_TABLE_COLUMN_IGNORE = array(
         ["key"=>"dev_date", "key_dt"=>DB_CON::PARAM_STR]
