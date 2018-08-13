@@ -29,6 +29,7 @@
     "less": "^2.7.2"
   },
   "dependencies": {
+    "blueimp-file-upload": "^9.22.0",
     "blueimp-image-gallery": "^3.2.1",
     "bootstrap": "^3.3.7",
     "bootstrap-colorpicker": "^2.5.1",
