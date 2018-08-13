@@ -1,8 +1,9 @@
 <?php
 namespace{
-    //PDO Data Types PDO::PARAM_*
-    $db_backup_dir = dirname(__DIR__).DIRECTORY_SEPARATOR."databasebackup";
+    /*database backup location*/
+    $db_backup_dir = META_CON::VAR_BASE_DIR.DIRECTORY_SEPARATOR."databasebackup";
     !defined('DB_BACKUP_DIR') ? define('DB_BACKUP_DIR', $db_backup_dir) : NULL;
+    //PDO Data Types PDO::PARAM_*
     interface DB_CON{
         const DB_HOST = "localhost";
         const DB_USER = "root";

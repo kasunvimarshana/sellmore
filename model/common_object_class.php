@@ -40,7 +40,7 @@ class common_object_class{
         }
         return NULL;
     }
-	public function getPublicVars(){
+	public function get_public_vars(){
         return call_user_func('get_object_vars', $this);
     }
 

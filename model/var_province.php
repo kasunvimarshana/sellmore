@@ -19,10 +19,10 @@ class var_province extends common_object_class{
     
     function __construct($attributes = Array()){
         parent::__construct( $attributes );
-        $this->__set("var_table_name", VAR_TABLE_NAME);
-        $this->__set("var_table_column", VAR_TABLE_COLUMN);
-        $this->__set("var_table_column_ignore", VAR_TABLE_COLUMN_IGNORE);
-        $this->__set("var_primary_key", VAR_PRIMARY_KEY);
+        $this->__set("var_table_name", self::VAR_TABLE_NAME);
+        $this->__set("var_table_column", self::VAR_TABLE_COLUMN);
+        $this->__set("var_table_column_ignore", self::VAR_TABLE_COLUMN_IGNORE);
+        $this->__set("var_primary_key", self::VAR_PRIMARY_KEY);
     }
 
 }
