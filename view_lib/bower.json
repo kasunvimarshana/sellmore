@@ -71,7 +71,9 @@
     "datatables.net-rowgroup-dt": "^1.0.4",
     "datatables.net-rowreorder-dt": "^1.2.5",
     "datatables.net-scroller-dt": "^1.5.1",
-    "datatables.net-select-dt": "^1.2.7"
+    "datatables.net-select-dt": "^1.2.7",
+    "jqplot": "*",
+    "jstree": "^3.3.5"
   },
   "resolutions": {
     "jquery": "^3.2.1"
