@@ -9,7 +9,7 @@ if(isset($_GET['file']) && !empty($_GET['file']))
 	
 	$image_path = $_GET['file'];
 	
-	if(file_exists($image_path))
+	if((isset($image_path)) && (!empty($image_path)))//file_exists($image_path)
 	{
 		$Image = new pjImage();
 		

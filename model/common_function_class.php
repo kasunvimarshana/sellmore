@@ -4,6 +4,7 @@ namespace{
         
         //date & time units
         public const VAR_DT_UNIT = ["day"=>"day", "month"=>"month", "year"=>"year"];
+        public const VAR_URL_PARAM = ["P1"=>"URL", "P2"=>"ABS_PATH"];
         public static $var_systemlog_dir;
         public static $var_systemlog_file;
         public static $OBJ;
@@ -225,20 +226,36 @@ namespace{
         /*.*/
         /*
         create file url
-        create a url using absolute path
-        @param $param_1 absolute path
+        @param $param_1 url string
+        @param $param_2 boolean
         @return string
         @throws Exception
         */
-        public static function f_create_file_url($param_1){
+        public static function f_create_file_url_1($param_1, $param_2=self::VAR_URL_PARAM["P1"]){
             $return_val = NULL;
             $temp_base_dir = META_CON::VAR_BASE_DIR;
             $temp_base_url = META_CON::VAR_BASE_URL;
             $temp_directory_separator = META_CON::DS;
             $temp_url_separator = META_CON::URL_SEPARATOR;
-            $temp_serch = array($temp_base_dir, $temp_directory_separator);
-            $temp_replace = array($temp_base_url, $temp_url_separator);
-            $return_val = str_replace($temp_serch, $temp_replace, $param_1);
+            switch($param_2){
+                case self::VAR_URL_PARAM["P1"]:
+                    {
+                        $temp_serch = array($temp_base_dir, $temp_directory_separator);
+                        $temp_replace = array($temp_base_url, $temp_url_separator);
+                        $return_val = str_replace($temp_serch, $temp_replace, $param_1);
+                        break;
+                    }
+                case self::VAR_URL_PARAM["P2"]:
+                    {
+                        $temp_serch = array($temp_base_url, $temp_url_separator);
+                        $temp_replace = array($temp_base_dir, $temp_directory_separator);
+                        $return_val = str_replace($temp_serch, $temp_replace, $param_1);
+                        break;
+                    }
+                default :
+                    $return_val = NULL;
+                    break;
+            }
             return $return_val;
         }
         /*.*/
