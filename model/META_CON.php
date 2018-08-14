@@ -24,6 +24,7 @@ namespace{
     
     interface META_CON{
         const DS = DIRECTORY_SEPARATOR;
+        const URL_SEPARATOR = "/";
         const VAR_BASE_DIR = VAR_BASE_DIR;
         const VAR_BASE_URLPROTOCOL = VAR_BASE_URLPROTOCOL;
         const VAR_BASE_URL = VAR_BASE_URL;

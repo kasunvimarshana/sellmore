@@ -4,8 +4,15 @@ namespace{
         
         //date & time units
         public const VAR_DT_UNIT = ["day"=>"day", "month"=>"month", "year"=>"year"];
-        public $var_systemlog_dir;
-        public $var_systemlog_file;
+        public static $var_systemlog_dir;
+        public static $var_systemlog_file;
+        public static $OBJ;
+        public static function init(){
+            if (self::$OBJ == NULL){
+                self::$OBJ = new self();
+            }
+            return self::$OBJ;
+        }
         function __construct($param = NULL){
             self::$var_systemlog_dir = META_CON::VAR_SYSTEMLOG_DIR;
             self::$var_systemlog_file = META_CON::VAR_SYSTEMLOG_FILE;
@@ -38,6 +45,7 @@ namespace{
         @param $param_2 date end
                format (Y-m-d)
         @return $return_val array()
+        @throws Exception
         */
         public static function f_get_date_range($param_1, $param_2){
             $return_val = array();
@@ -102,6 +110,8 @@ namespace{
         removeFile function
         remove given file or directory
         @param $param string
+        @return boolean
+        @throws Exception
         */
         public static function f_delete_content($param){
             $return_val = FALSE;
@@ -192,6 +202,8 @@ namespace{
         create a log using given data
         @param $param_1 array
         @param $param_2 filename
+        @return boolean
+        @throws Exception
         */
         public static function f_create_log($param_1, $param_2 = NULL){
             $return_val = FALSE;
@@ -211,8 +223,29 @@ namespace{
             return $return_val;
         }
         /*.*/
+        /*
+        create file url
+        create a url using absolute path
+        @param $param_1 absolute path
+        @return string
+        @throws Exception
+        */
+        public static function f_create_file_url($param_1){
+            $return_val = NULL;
+            $temp_base_dir = META_CON::VAR_BASE_DIR;
+            $temp_base_url = META_CON::VAR_BASE_URL;
+            $temp_directory_separator = META_CON::DS;
+            $temp_url_separator = META_CON::URL_SEPARATOR;
+            $temp_serch = array($temp_base_dir, $temp_directory_separator);
+            $temp_replace = array($temp_base_url, $temp_url_separator);
+            $return_val = str_replace($temp_serch, $temp_replace, $param_1);
+            return $return_val;
+        }
+        /*.*/
         
     }
+    //call
+    common_function_class::init();
 }
 ?>
 <?php
