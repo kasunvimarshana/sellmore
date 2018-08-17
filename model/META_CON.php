@@ -30,6 +30,8 @@ namespace{
         const VAR_BASE_URL = VAR_BASE_URL;
         const VAR_SYSTEMLOG_DIR = VAR_SYSTEMLOG_DIR;
         const VAR_SYSTEMLOG_FILE = VAR_SYSTEMLOG_FILE;
+        const VAR_SITE_NAME_1 = "SELLMORE";
+        const VAR_SITE_NAME_2 = "sellmore";
     }
 }
 ?>

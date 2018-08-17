@@ -11,7 +11,7 @@ class var_post extends common_object_class{
         ["key"=>"content", "key_dt"=>DB_CON::PARAM_STR],
         ["key"=>"name", "key_dt"=>DB_CON::PARAM_STR],
         ["key"=>"type", "key_dt"=>DB_CON::PARAM_STR],
-        ["key"=>"guild", "key_dt"=>DB_CON::PARAM_STR],
+        ["key"=>"guid", "key_dt"=>DB_CON::PARAM_STR],
         ["key"=>"sort_order", "key_dt"=>DB_CON::PARAM_INT],
         ["key"=>"date_added", "key_dt"=>DB_CON::PARAM_STR],
         ["key"=>"var_ip", "key_dt"=>DB_CON::PARAM_STR],
