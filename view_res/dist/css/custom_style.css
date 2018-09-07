@@ -35,3 +35,13 @@
   background-color: #555;
 }
 /* custom scrollbar end */
+/*remove ui content max height start*/
+.ui>.item>.content{
+    min-height: 0 !important;
+}
+/*remove ui content max height end*/
+/*remove sidebar-form bordr start*/
+.sidebar-form{
+    border: none !important;
+}
+/*remove sidebar-form bordr start*/

@@ -43,11 +43,22 @@ require_once($base_dir.DIRECTORY_SEPARATOR."var_common_include.php");
                         <p>
                             <?php echo META_CON::VAR_SITE_NAME_1;?>
                             <!-- small>Branch : </small -->
-                            <small><strong>User</strong>&emsp;<?php echo ""; ?></small>
-                            <small><strong>User</strong>&emsp;<?php echo ""; ?></small>
+                            <small><strong>User</strong>&emsp;<?php echo "User Name"; ?></small>
                         </p>
                     </li>
                     <!-- Menu Body -->
+                    <li class="user-body">
+                        <!-- row -->
+                        <div class="row">
+                          <div class="col-xs-6 text-center">
+                            <a href="#">Profile</a>
+                          </div>
+                          <div class="col-xs-6 text-center">
+                            <a href="#">Watch List</a>
+                          </div>
+                        </div>
+                        <!-- /.row -->
+                    </li>
 
                     <!-- Menu Footer-->
                     <li class="user-footer">

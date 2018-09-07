@@ -9,6 +9,8 @@ require_once($base_dir.DIRECTORY_SEPARATOR."var_common_include.php");
 <script src="<?php echo META_CON::VAR_BASE_URL;?>/view_res/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- jquery-ui-->
 <script src="<?php echo META_CON::VAR_BASE_URL;?>/view_res/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- semantic -->
+<script src="<?php echo META_CON::VAR_BASE_URL;?>/view_res/bower_components/semantic/dist/semantic.min.js"></script>
 <!-- DataTables -->
 <script src="<?php echo META_CON::VAR_BASE_URL;?>/view_res/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <!-- Select2 -->

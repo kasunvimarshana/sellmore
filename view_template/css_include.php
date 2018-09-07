@@ -7,6 +7,8 @@ require_once($base_dir.DIRECTORY_SEPARATOR."var_common_include.php");
 <link rel="stylesheet" href="<?php echo META_CON::VAR_BASE_URL;?>/view_res/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 <!-- jquery-ui -->
 <link rel="stylesheet" href="<?php echo META_CON::VAR_BASE_URL;?>/view_res/bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css"/>
+<!-- semantic -->
+<link rel="stylesheet" href="<?php echo META_CON::VAR_BASE_URL;?>/view_res/bower_components/semantic/dist/semantic.min.css"/>
 <!-- Font Awesome -->
 <link rel="stylesheet" href="<?php echo META_CON::VAR_BASE_URL;?>/view_res/bower_components/font-awesome/css/font-awesome.min.css"/>
 <!-- Ionicons -->

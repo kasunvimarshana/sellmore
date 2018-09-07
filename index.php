@@ -16,6 +16,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <title><?php echo META_CON::VAR_SITE_NAME_1;?></title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+        <!-- meta og -->
+        <meta property="og:url" content="<?php echo META_CON::VAR_BASE_URL;?>"/>
+        <meta property="og:site_name" content="<?php echo META_CON::VAR_BASE_URL;?>"/>
+        <meta property="og:title" content="<?php echo META_CON::VAR_SITE_NAME_1;?>"/>
+        <meta property="og:description" content="Buy and sell everything"/>
+        <meta property="og:image" content="<?php echo META_CON::VAR_BASE_URL;?>"/>
         <!-- favicon -->
         <link rel="icon" type="image/png" sizes="" href="<?php echo META_CON::VAR_BASE_URL;?>"/>
         <!-- stylesheet --> 
@@ -45,7 +51,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-black-light fixed sidebar-mini"><!-- style="overflow-x:auto;" -->
+<body class="hold-transition skin-black-light fixed"><!-- style="overflow-x:auto;" -->
 <div class="wrapper">
 
   <!-- Main Header -->
@@ -63,7 +69,7 @@ desired effect
   <!-- Content Wrapper. Contains page content -->
 
   <!-- view template loader -->
-  <div id="view_template_loader_temp_1" class="row no-marging no-padding">
+  <div id="view_template_loader_temp_1" class="content-wrapper mx-auto">
   <?php include_once(META_CON::VAR_BASE_DIR.DIRECTORY_SEPARATOR."view_template".DIRECTORY_SEPARATOR."view_template_loader_temp.php");?>
   </div>
   <!-- /.view template loader -->

@@ -231,7 +231,7 @@ namespace{
         @return string
         @throws Exception
         */
-        public static function f_create_file_url_1($param_1, $param_2=self::VAR_URL_PARAM["P1"]){
+        public static function f_get_url_1($param_1, $param_2=self::VAR_URL_PARAM["P1"]){
             $return_val = NULL;
             $temp_base_dir = META_CON::VAR_BASE_DIR;
             $temp_base_url = META_CON::VAR_BASE_URL;

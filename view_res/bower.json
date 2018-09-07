@@ -73,7 +73,8 @@
     "datatables.net-scroller-dt": "^1.5.1",
     "datatables.net-select-dt": "^1.2.7",
     "jqplot": "*",
-    "jstree": "^3.3.5"
+    "jstree": "^3.3.5",
+    "semantic": "semantic-ui#^2.3.3"
   },
   "resolutions": {
     "jquery": "^3.2.1"
